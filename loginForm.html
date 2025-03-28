@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Form</title>
+    <style>
+        * {
+            /* border: 1px solid red; */
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            /* border: 1px solid black; */
+        }
+        a {
+            text-decoration: none;
+            color: blueviolet;
+            /* border: 1px solid red; */
+            /* padding: 1px solid brown; */
+            margin: 0;
+            padding: 0;
+
+        }
+        header {
+            /* border: 1px solid black; */
+            justify-content: center;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            /* border: 1px solid red; */
+            margin: 10px auto;
+            padding: 10px auto;
+        }
+        li {
+            /* border: 1px solid black; */
+            padding: 10px;
+            border-radius: 9rem;
+            box-shadow: 1px 1px 1px black;
+            width: 60px;
+            transition: .3s ease-in-out;
+            background-color: aliceblue;
+        }
+        li:hover {
+            transform: scale(1.1);
+            box-shadow: 20px 20px 20px black;
+        }
+        form {
+            text-align: center;
+            border: 1px solid black;
+            width: 350px;
+            margin: 0 auto;
+        }
+        .date {
+            padding: 10px;
+            margin: 10px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 1rem;
+            border: 1px solid black;
+            box-shadow: 1px 1px 1px black;
+            transition: .3s ease-in-out;
+        }
+        input.submit:hover {
+            transform: scale(1.1);
+            box-shadow: 20px 20px 20px black;
+        }
+        h3 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+        }
+        div {
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h3>Form for login</h3>
+            <form>
+                <label for="email/phone">Email/Phone:</label>
+                <input type="email" name="email/phone" id="email/phone" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                <input type="submit" class="submit" value="Log In">
+            </form>
+    
+</body>
+</html>
